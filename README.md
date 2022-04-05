@@ -1,5 +1,7 @@
 # Geosite2PAC
 
+[![Docker](https://github.com/Max-Sum/geosite2pac/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/Max-Sum/geosite2pac/actions/workflows/docker-publish.yml)
+
 This tool generates a Proxy Auto-Configuration(PAC) file from the well-established geosite.dat file of v2ray.
 
 ## Run
