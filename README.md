@@ -36,12 +36,13 @@ docker kill geosite2pac --signal=SIGHUP
 
 ## Configuration
 
-rule.json is the main configuration file, contains an map. The key is very similar to v2ray's [RuleObject-domains](https://www.v2fly.org/config/routing.html#routingobject), with some specialties:
+rule.json is the main configuration file, contains an map. The key is very similar to v2ray's [RuleObject-domains](https://www.v2fly.org/config/routing.html#ruleobject), with some specialties:
 
 - `ext` supports only geosite.dat, not geoip.dat
 - `ext-ip` is supported to load geoip.dat
 - `ip` is added to support matching of IPs
 - `default` can be defined to match all
+- `geosite / geoip` is not supported because no pre-defined list is integrated, use `ext/ext-ip` to specify file instead
 
 The value of map is the PAC return value.
 
