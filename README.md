@@ -24,6 +24,16 @@ or you can run from docker:
 docker run --name geosite2pac -p 80:8000 -v config:/app/config gzmaxsum/geosite2pac
 ```
 
+#### Reload & purge cache
+
+When the program serves as WPAD file server. It caches the generated pac for 24 hours. To purge the cache, send SIGHUP to the process:
+
+```
+kill -HUP $(pidof geosite2pac)
+# or send to docker container
+docker kill geosite2pac --signal=SIGHUP
+```
+
 ## Configuration
 
 rule.json is the main configuration file, contains an map. The key is very similar to v2ray's [RuleObject-domains](https://www.v2fly.org/config/routing.html#routingobject), with some specialties:
