@@ -53,7 +53,7 @@ For example, you can do:
   "ext:geosite.dat:category-ads": "PROXY 0.0.0.0:3421",
   "ext:geosite.dat:cn": "DIRECT",
   "ext:geosite.dat:gfw": "SOCKS5 127.0.0.1:1080",
-  "ip:10.0.0.0/8": DIRECT,
+  "ip:10.0.0.0/8": "DIRECT",
   "ext-ip:geoip.dat:cn": "DIRECT",
   "default": "SOCKS5 127.0.0.1:1080"
 }
