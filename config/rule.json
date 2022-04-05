@@ -1,0 +1,6 @@
+{
+  "ext:geosite.dat:cn": "DIRECT",
+  "ext:geosite.dat:gfw": "SOCKS5 127.0.0.1:1080; HTTP 127.0.0.1:8080; DIRECT",
+  "ext:geosite.dat:greatfire": "SOCKS5 127.0.0.1:1080; HTTP 127.0.0.1:8080; DIRECT",
+  "default": "DIRECT"
+}
